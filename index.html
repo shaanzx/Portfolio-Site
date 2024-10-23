@@ -31,6 +31,14 @@
         position: relative;
       }
 
+      hr {
+        background-color: white;
+        height: 5px;
+        z-index: 2;
+        position: relative;
+        margin: 0;
+      }
+
       .overlay {
         position: fixed;
         top: 0;
@@ -38,8 +46,16 @@
         right: 0;
         bottom: 0;
         background-color: #0f3d2ede; /* Semi-transparent overlay */
+        background: linear-gradient(
+          to bottom,
+          #020807 0%,
+          #0e5549e1 50%,
+          #063029e7 100%
+        );
         z-index: 1;
       }
+
+      /* HEADER */
 
       .nav-bar {
         display: flex;
@@ -79,6 +95,8 @@
         color: #3cf820;
         transition: 0.5s ease-in-out;
       }
+
+      /* HOME */
 
       .container {
         display: flex;
@@ -141,6 +159,7 @@
         position: relative;
         margin-top: -230px;
         margin-left: -100px;
+        margin-bottom: -210px;
       }
 
       .hero-image img {
@@ -150,18 +169,342 @@
 
       .hero-text {
         font-size: 2rem;
-        margin: -50px 0px 0px -200px;
+        margin: 50px 0px 0px -200px;
         line-height: 0.5;
-        animation: left-to-right 1.5s ease-in-out infinite;
+        /* animation: left-to-right 1.5s ease-in-out infinite; */
         /* display: none; */
       }
 
+      .hero-text h2 {
+        animation: left-to-right 1.5s ease-in-out infinite;
+      }
+      .hero-text p {
+        color: #7ce4ca;
+        animation: left-to-right 1.5s ease-in-out infinite;
+      }
+
+      .hero-text button {
+        background-color: #2a9672;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        margin-left: 500px;
+      }
+
+      .hero-text button:hover {
+        background-color: white;
+        color: #2a9672;
+        transition: 0.5s ease-in-out;
+      }
+
+      .btn-navigation {
+        margin-top: 80px;
+        margin-left: 300px;
+        display: flex;
+        gap: 50px;
+      }
+
+      .btn-navigation a {
+        font-size: 2.5rem;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+      }
+
       @keyframes left-to-right {
-        0%{
+        0% {
           transform: translateX(-20px);
         }
-        }
-      
+      }
+
+      /* ABOUT ME */
+
+      .about-me {
+        margin: 0px 20px;
+        position: relative;
+        z-index: 2;
+        margin-top: 20px;
+      }
+
+      .about-me h2 {
+        font-size: 2rem;
+        margin-bottom: 0px;
+      }
+
+      .about-me::first-letter {
+        color: #3cf820;
+        font-size: 3rem;
+      }
+
+      .about-me-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .about-me-text {
+        line-height: 1.5;
+        text-align: justify;
+        margin-right: 100px;
+      }
+
+      .about-me-image img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 1px 0px 50px 0px #0d0e0d;
+        object-fit: cover;
+        margin-right: 100px;
+        margin-top: -0px;
+      }
+
+      #download-cv {
+        background-color: #2a9672;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 25px;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      #download-cv:hover {
+        background-color: white;
+        color: #2a9672;
+        transition: 0.5s ease-in-out;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: 24px;
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100px;
+        background-color: #2a967234;
+        border-radius: 12px;
+        margin-top: -20px;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      .skill {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 2s ease-in-out;
+      }
+
+      .skill:hover {
+        color: #3cf820;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        margin-top: -50px;
+      }
+      .skill i {
+        padding-top: 24px;
+        font-size: 2.5rem;
+      }
+
+      .skill p {
+        font-size: 0.8rem;
+      }
+
+      .info-education {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+
+      .info {
+        width: 30%;
+        height: auto;
+        background-color: #2a967259;
+        border-radius: 12px;
+        margin-top: 32px;
+        padding-left: 36px;
+        margin-left: 10%;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      .education {
+        width: 30%;
+        height: auto;
+        background-color: #2a967259;
+        border-radius: 12px;
+        margin-top: 32px;
+        padding-left: 36px;
+        margin-right: 10%;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      #headline {
+        font-size: 1.5rem;
+        color: #3cf820;
+      }
+
+      #services {
+        z-index: 2;
+        position: relative;
+        margin: 0 20px 24px 24px;
+      }
+
+      #services h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      #services h2::first-letter {
+        color: #3cf820;
+        font-size: 3rem;
+      }
+
+      .services-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .services-icon {
+        width: 150px;
+        height: 150px;
+        background-color: #2a96726b;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        margin-left: 5%;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      .services-content {
+        width: 70%;
+        height: 125px;
+        background-color: #2a967257;
+        border-radius: 12px;
+        margin-top: 24px;
+        margin-right: 5%;
+        overflow-y: auto;
+        padding: 12px;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      .services-icon i {
+        font-size: 5rem;
+      }
+
+      .services-content h3 {
+        color: #49df85;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .services-content p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+
+      #projects {
+        z-index: 2;
+        position: relative;
+        margin: 0 24px 24px 24px;
+      }
+
+      #projects h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      #projects h2::first-letter {
+        color: #3cf820;
+        font-size: 3rem;
+      }
+
+      #projects p {
+        text-align: justify;
+      }
+
+      #project-title {
+        z-index: 2;
+        position: relative;
+        margin-left: 80px;
+        font-size: 1.5rem;
+      }
+      .java-project {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 24px;
+        z-index: 2;
+        position: relative;
+      }
+
+      .project {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        background-color: #2a967241;
+        transition: 1s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .project p {
+        font-size: 1rem;
+        display: none;
+        transition: 1s ease-in-out;
+      }
+
+      .project img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .project:hover img {
+        width: 20%;
+      }
+
+      .project:hover p {
+        display: block;
+        transition: 1s ease-in-out;
+        margin-left: 8px;
+        height: 200px;
+        overflow-y: auto;
+      }
+
+      .project:hover {
+        width: 600px;
+        margin-left: 24px;
+
+        transition: 0.5s ease-in-out;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
     </style>
   </head>
   <body>
@@ -213,7 +556,237 @@
         <div class="hero-text">
           <h2>Hey, I'm Lakshan Jayawardhana</h2>
           <p>Fullstack Developer</p>
+          <button>Contact</button>
+          <div class="btn-navigation">
+            <a href=""
+              ><i class="fa-brands fa-whatsapp" style="color: #ffffff"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-github" style="color: #ffffff"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+            ></a>
+          </div>
         </div>
+      </div>
+      <hr />
+      <div class="about-me">
+        <h2>About Me</h2>
+        <div class="about-me-container">
+          <div class="about-me-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              aperiam repellendus similique. Alias doloremque, minus maxime quod
+              eum, saepe voluptatibus, delectus dignissimos a fugit ipsum rem
+              aliquid dolorem unde labore. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Unde officiis molestiae deserunt
+              minus obcaecati odio reiciendis quidem doloribus voluptatibus
+              iusto suscipit autem totam deleniti labore corrupti harum, non
+              sed! Ratione.
+            </p>
+            <button id="download-cv">Download CV</button>
+          </div>
+          <div class="about-me-image">
+            <img src="/assest/images/About-me-image.jpg" alt="lakshan-image" />
+          </div>
+        </div>
+        <div class="skills">
+          <p class="title">Skills</p>
+          <div class="box">
+            <div class="skill">
+              <i class="fa-brands fa-java"></i>
+              <p>Java</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-css3"></i>
+              <p>CSS</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-js"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-bootstrap"></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-react"></i>
+              <p>React</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-node"></i>
+              <p>Node</p>
+            </div>
+
+            <div class="skill">
+              <i class="fa-brands fa-python"></i>
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-education">
+          <div class="info">
+            <p id="headline">Info</p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <p>Lakshan Jayawardhana</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Bibile, Sri Lanka</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>+94 77 698 6455</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <p>shaanz11.11@gmail.com</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>05/01/1998</p>
+              </li>
+            </ul>
+          </div>
+          <div class="education">
+            <p id="headline">Education</p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <p>Lakshan Jayawardhana</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Bibile, Sri Lanka</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>+94 77 698 6455</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <p>shaanz11.11@gmail.com</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>05/01/1998</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div id="services">
+        <h2>Services</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ex
+          iure autem. Cupiditate distinctio sapiente quam incidunt obcaecati,
+          illum voluptatem porro aperiam atque, aliquid natus perspiciatis
+          facere reprehenderit nemo blanditiis?
+        </p>
+        <div class="services-container">
+          <div class="services-icon">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="services-content">
+            <h3>JAVA PROJECT</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste vel
+              quidem non cumque culpa, consequatur, eaque sunt rerum eveniet
+              praesentium ipsa. Minus fugit consequuntur laudantium laborum iste
+              aspernatur itaque repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="services-icon">
+            <i class="fa-brands fa-uikit"></i>
+          </div>
+          <div class="services-content">
+            <h3>UI/UX</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste vel
+              quidem non cumque culpa, consequatur, eaque sunt rerum eveniet
+              praesentium ipsa. Minus fugit consequuntur laudantium laborum iste
+              aspernatur itaque repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="services-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="services-content">
+            <h3>WEB DEVELOPMENT</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste vel
+              quidem non cumque culpa, consequatur, eaque sunt rerum eveniet
+              praesentium ipsa. Minus fugit consequuntur laudantium laborum iste
+              aspernatur itaque repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="services-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="services-content">
+            <h3>DATABASE MANAGEMENT</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste vel
+              quidem non cumque culpa, consequatur, eaque sunt rerum eveniet
+              praesentium ipsa. Minus fugit consequuntur laudantium laborum iste
+              aspernatur itaque repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div id="projects">
+        <h2>PROJECTS</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nemo
+          repellendus inventore voluptatem vel tempore natus perspiciatis hic?
+          Tempora iusto accusamus sit voluptatibus aut asperiores ratione eos
+          cupiditate expedita nulla.
+        </p>
+      </div>
+      <h3 id="project-title">JAVA PROJECT</h3>
+      <div class="java-project">
+        <div class="project project-1">
+          <img src="/assest/images/JAva projects.jpg" alt="project-01" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+            delectus omnis esse autem odio suscipit quo reprehenderit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi iure
+            debitis voluptatem eos assumenda laudantium dolor iste impedit
+            veritatis, quisquam aliquam quibusdam velit, blanditiis sapiente!
+            Blanditiis est suscipit veritatis?
+          </p>
+        </div>
+        <div class="project project-2">2</div>
+        <div class="project project-3">3</div>
+        <div class="project project-4">4</div>
       </div>
     </main>
     <footer></footer>
