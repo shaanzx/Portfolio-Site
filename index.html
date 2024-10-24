@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Lakshan Portfollio</title>
 
     <style>
@@ -91,6 +92,10 @@
         color: white;
       }
 
+      .nav-links a.active {
+        color: #3cf820;
+      }
+
       .nav-links a:hover {
         color: #3cf820;
         transition: 0.5s ease-in-out;
@@ -157,30 +162,31 @@
         align-items: center;
         z-index: 2;
         position: relative;
-        margin-top: -230px;
-        margin-left: -100px;
-        margin-bottom: -210px;
+        margin-top: 25px;
+        margin-left: -120px;
+        margin-bottom: -5px;
       }
 
       .hero-image img {
         width: 60vw;
-        height: 60vw;
+        /* height: 40%; */
+        /* object-fit: cover; */
       }
 
       .hero-text {
         font-size: 2rem;
-        margin: 50px 0px 0px -200px;
+        margin: 50px 0px 0px -210px;
         line-height: 0.5;
         /* animation: left-to-right 1.5s ease-in-out infinite; */
         /* display: none; */
       }
 
       .hero-text h2 {
-        animation: left-to-right 1.5s ease-in-out infinite;
+        /* animation: left-to-right 1.5s ease-in-out infinite; */
       }
-      .hero-text p {
+      .hero-text h3 {
         color: #7ce4ca;
-        animation: left-to-right 1.5s ease-in-out infinite;
+        /* animation: left-to-right 1.5s ease-in-out infinite; */
       }
 
       .hero-text button {
@@ -216,27 +222,27 @@
         border-radius: 50%;
       }
 
-      @keyframes left-to-right {
+      /* @keyframes left-to-right {
         0% {
           transform: translateX(-20px);
         }
-      }
+      } */
 
       /* ABOUT ME */
 
-      .about-me {
+      #about-me {
         margin: 0px 20px;
         position: relative;
         z-index: 2;
         margin-top: 20px;
       }
 
-      .about-me h2 {
+      #about-me h2 {
         font-size: 2rem;
         margin-bottom: 0px;
       }
 
-      .about-me::first-letter {
+      #about-me::first-letter {
         color: #3cf820;
         font-size: 3rem;
       }
@@ -293,11 +299,12 @@
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        height: 100px;
-        background-color: #2a967234;
+        height: 150px;
+        /* background-color: #2a967234; */
         border-radius: 12px;
         margin-top: -20px;
-        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        /* box-shadow: 0px 0px 20px 0px #0d0e0d; */
+        box-shadow: 0 0 12px black;
       }
 
       .skill {
@@ -308,13 +315,112 @@
         justify-content: center;
         align-items: center;
         transition: 2s ease-in-out;
+        animation: down-up 1.5s ease-in-out infinite;
+      }
+
+      .skill-01 {
+        animation-delay: 0s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-02 {
+        animation-delay: 0.3s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-03 {
+        animation-delay: 0.6s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-04 {
+        animation-delay: 0.9s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-05 {
+        animation-delay: 1.2s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-06 {
+        animation-delay: 1.5s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-07 {
+        animation-delay: 1.8s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      .skill-08 {
+        animation-delay: 2.1s;
+        color: #3cf820;
+        /* transition: 0.5s ease-in-out; */
+        cursor: pointer;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        border-radius: 50%;
+        /* margin-top: -50px; */
+      }
+
+      @keyframes down-up {
+        0%,
+        100% {
+          transform: translatex(-35px);
+        }
+        50% {
+          transform: translatex(35px);
+        }
       }
 
       .skill:hover {
-        color: #3cf820;
+        /* color: #3cf820; */
         transition: 0.5s ease-in-out;
         cursor: pointer;
-        transform: scale(1.5);
+        /* transform: scale(1.5); */
         box-shadow: 0px 0px 20px 0px #0d0e0d;
         border-radius: 50%;
         margin-top: -50px;
@@ -335,26 +441,52 @@
         margin-bottom: 24px;
       }
 
+      /* .info-education:hover{
+        animation: left-to-center 1.5s ease-in-out;
+        animation: right-to-center 1.5s ease-in-out;
+      } */
+
       .info {
         width: 30%;
         height: auto;
-        background-color: #2a967259;
+        /* background-color: #2a967259; */
         border-radius: 12px;
         margin-top: 32px;
         padding-left: 36px;
         margin-left: 10%;
-        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        /* box-shadow: 0px 0px 20px 0px #0d0e0d; */
+        box-shadow: 0 0 12px black;
+        animation: left-to-center 1.5s ease-in-out;
       }
 
+      @keyframes left-to-center {
+        0% {
+          transform: translateX(-600px);
+        }
+        50% {
+          transform: translateX(50px);
+        }
+      }
       .education {
         width: 30%;
         height: auto;
-        background-color: #2a967259;
+        /* background-color: #2a967259; */
         border-radius: 12px;
         margin-top: 32px;
         padding-left: 36px;
         margin-right: 10%;
-        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        /* box-shadow: 0px 0px 20px 0px #0d0e0d; */
+        box-shadow: 0 0 12px black;
+        animation: right-to-center 1.5s ease-in-out;
+      }
+
+      @keyframes right-to-center {
+        0% {
+          transform: translateX(600px);
+        }
+        50% {
+          transform: translateX(-50px);
+        }
       }
 
       #headline {
@@ -388,26 +520,49 @@
       .services-icon {
         width: 150px;
         height: 150px;
-        background-color: #2a96726b;
+        /* background-color: #2a96726b; */
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 24px;
         margin-left: 5%;
-        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        /* box-shadow: 0 0 12px black; */
+        box-shadow: 0 0 12px black;
+        animation: top-to-bottom 1.5s ease-in-out;
+      }
+
+      @keyframes top-to-bottom {
+        0% {
+          transform: translateY(-600px);
+        }
+        50% {
+          transform: translateY(50px);
+        }
       }
 
       .services-content {
         width: 70%;
         height: 125px;
-        background-color: #2a967257;
+        /* background-color: #2a967257; */
         border-radius: 12px;
         margin-top: 24px;
         margin-right: 5%;
         overflow-y: auto;
         padding: 12px;
-        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        /* box-shadow: 0px 0px 20px 0px #0d0e0d; */
+        box-shadow: 0 0 12px black;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: bottom-to-top 1.5s ease-in-out;
+      }
+
+      @keyframes bottom-to-top {
+        0% {
+          transform: translateY(600px);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
       }
 
       .services-icon i {
@@ -452,6 +607,8 @@
         margin-left: 80px;
         font-size: 1.5rem;
       }
+
+      /* JAVA PROJECT */
       .java-project {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -465,29 +622,44 @@
         width: 200px;
         height: 200px;
         border-radius: 12px;
-        box-shadow: 0px 0px 20px 0px #0d0e0d;
-        background-color: #2a967241;
-        transition: 1s ease-in-out;
+        box-shadow: 0px 0px 20px 0px #192919;
+        transition: 0.5s ease-in-out;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
 
+      .project h3 {
+        font-size: 1.5rem;
+        margin-left: 8px;
+        display: none;
+        transition: 1s ease-in-out;
+      }
+
+      .project:hover h3 {
+        display: block;
+        transition: 1s ease-in-out;
+        margin-left: 8px;
+      }
       .project p {
         font-size: 1rem;
         display: none;
         transition: 1s ease-in-out;
+        text-align: justify;
+        padding-right: 8px;
       }
 
       .project img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
         border-radius: 12px;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
       }
 
       .project:hover img {
-        width: 20%;
+        width: 40%;
       }
 
       .project:hover p {
@@ -500,10 +672,271 @@
 
       .project:hover {
         width: 600px;
+        /* background-color: #0d0e0d; */
         margin-left: 24px;
+        transition: 0.5s ease-in-out;
+        /* box-shadow: 0px 0px 20px 0px #0d0e0d; */
+        box-shadow: 0 0 12px black;
+      }
 
+      .project:hover h3 {
+        color: #3cf820;
+        transition: 0.5s ease-in-out;
+      }
+
+      /* WEB APPLICATION */
+      .web-application {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 24px;
+        z-index: 2;
+        position: relative;
+      }
+
+      .application {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px 0px #192919;
+        transition: 0.5s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .application h3 {
+        font-size: 1.5rem;
+        margin-left: 8px;
+        display: none;
+        transition: 1s ease-in-out;
+      }
+
+      .application:hover h3 {
+        display: block;
+        transition: 1s ease-in-out;
+        margin-left: 8px;
+      }
+      .application p {
+        font-size: 1rem;
+        display: none;
+        transition: 1s ease-in-out;
+        text-align: justify;
+        padding-right: 8px;
+      }
+
+      .application img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 12px;
         transition: 0.5s ease-in-out;
         box-shadow: 0px 0px 20px 0px #0d0e0d;
+      }
+
+      .application:hover img {
+        width: 40%;
+      }
+
+      .application:hover p {
+        display: block;
+        transition: 1s ease-in-out;
+        margin-left: 8px;
+        height: 200px;
+        overflow-y: auto;
+      }
+
+      .application:hover {
+        width: 600px;
+        /* background-color: #03130d00; */
+        margin-left: 24px;
+        transition: 0.5s ease-in-out;
+        /* box-shadow: 0px 0px 20px 0px #0d0e0d; */
+        box-shadow: 0 0 12px black;
+      }
+
+      .application:hover h3 {
+        color: #3cf820;
+        transition: 0.5s ease-in-out;
+      }
+
+      /* GALLERY */
+      .gallery-section {
+        z-index: 2;
+        position: relative;
+        margin: 0 24px 24px 24px;
+        margin-bottom: 150px;
+        transition: 1s ease-in-out;
+      }
+
+      #gallery-title {
+        text-align: center;
+        font-size: 2rem;
+        transition: 1s ease-in-out;
+      }
+
+      #gallery-title::first-letter {
+        color: #3cf820;
+        font-size: 3rem;
+      }
+
+      /* .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      } */
+
+      #main-image {
+        width: 300px;
+        height: 300px;
+        object-fit: fill;
+        border-radius: 12px;
+        transition: 1s ease-in-out;
+        box-shadow: 0px 0px 20px 0px #0d0e0d;
+        margin-bottom: 24px;
+        float: left;
+        margin-right: 24px;
+      }
+
+      #gallery-text {
+        text-align: justify;
+        height: 60%;
+        overflow-y: auto;
+      }
+
+      .image-collection {
+        display: flex;
+        justify-content: space-between;
+        transition: 1s ease-in-out;
+        gap: 24px;
+      }
+
+      .image-collection img:hover {
+        transition: 0.5s ease-in-out;
+      }
+
+      .image-collection img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: 0.5s ease-in-out;
+        display: none;
+      }
+
+      .gallery {
+        transition: 0.5s ease-in-out;
+      }
+      .gallery:hover {
+        display: flex;
+        justify-content: space-evenly;
+        transition: 0.5s ease-in-out;
+        overflow-x: scroll;
+        margin: 0;
+        box-shadow: 0px 0px 20px 20px #00000000;
+        margin-bottom: -150px;
+        transition: 0.5s ease-in-out;
+      }
+
+      .gallery:hover #gallery-text {
+        display: none;
+      }
+
+      .gallery:hover .image-collection img {
+        display: block;
+        transition: 0.5s ease-in-out;
+      }
+
+      /* CONTACT */
+      .contact-section {
+        z-index: 2;
+        position: relative;
+        margin: 0 24px 24px 24px;
+      }
+
+      .contact-section h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .contact-section h2::first-letter {
+        color: #3cf820;
+        font-size: 3rem;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+      }
+
+      .contact-section i {
+        font-size: 4rem;
+      }
+
+      /* contact form */
+      .main-form {
+        width: 30vw;
+        height: auto;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 50px auto;
+        box-shadow: 0 0 12px black;
+      }
+
+      .main-form h2 {
+        text-align: center;
+      }
+
+      .main-form p {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      input {
+        width: 100%;
+        border: rgb(173, 168, 168) 1px solid;
+        border-radius: 4px;
+        font-size: 1.5rem;
+      }
+
+      textarea {
+        width: 100%;
+        border: rgb(173, 168, 168) 1px solid;
+        border-radius: 4px;
+      }
+
+      #submit-button {
+        width: 100%;
+        background-color: #3cf820;
+        border: none;
+        color: white;
+        padding: 12px 10px;
+        border-radius: 8px;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      /* FOOTER */
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        position: relative;
+        margin: 0 20px;
+      }
+
+      .footer-nav i {
+        font-size: 2rem;
+        margin: 0 20px;
+        gap: 20px;
+      }
+
+      .footer-nav p {
+        font-size: 1.5rem;
+        margin-right: 20px;
       }
     </style>
   </head>
@@ -518,10 +951,10 @@
           <nav>
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a class="active" href="#home">Home</a>
               </li>
               <li>
-                <a href="#home">About</a>
+                <a href="#about-me">About</a>
               </li>
               <li>
                 <a href="#home">Services</a>
@@ -554,8 +987,9 @@
           <img src="/assest/images/Portfollio_Picture.png" alt="" />
         </div>
         <div class="hero-text">
-          <h2>Hey, I'm Lakshan Jayawardhana</h2>
-          <p>Fullstack Developer</p>
+          <!-- <h2 class="text">Hey, I'm Lakshan Jayawardhana</h2> -->
+          <h2><span class="text1"></span></h2>
+          <h3><span class="text"></span></h3>
           <button>Contact</button>
           <div class="btn-navigation">
             <a href=""
@@ -577,7 +1011,7 @@
         </div>
       </div>
       <hr />
-      <div class="about-me">
+      <div id="about-me">
         <h2>About Me</h2>
         <div class="about-me-container">
           <div class="about-me-text">
@@ -600,36 +1034,36 @@
         <div class="skills">
           <p class="title">Skills</p>
           <div class="box">
-            <div class="skill">
+            <div class="skill skill-01">
               <i class="fa-brands fa-java"></i>
               <p>Java</p>
             </div>
-            <div class="skill">
+            <div class="skill skill-02">
               <i class="fa-brands fa-html5"></i>
               <p>HTML</p>
             </div>
-            <div class="skill">
+            <div class="skill skill-03">
               <i class="fa-brands fa-css3"></i>
               <p>CSS</p>
             </div>
-            <div class="skill">
+            <div class="skill skill-04">
               <i class="fa-brands fa-js"></i>
               <p>JavaScript</p>
             </div>
-            <div class="skill">
+            <div class="skill skill-05">
               <i class="fa-brands fa-bootstrap"></i>
               <p>Bootstrap</p>
             </div>
-            <div class="skill">
+            <div class="skill skill-06">
               <i class="fa-brands fa-react"></i>
               <p>React</p>
             </div>
-            <div class="skill">
+            <div class="skill skill-07">
               <i class="fa-brands fa-node"></i>
               <p>Node</p>
             </div>
 
-            <div class="skill">
+            <div class="skill skill-08">
               <i class="fa-brands fa-python"></i>
               <p>Python</p>
             </div>
@@ -698,7 +1132,7 @@
           illum voluptatem porro aperiam atque, aliquid natus perspiciatis
           facere reprehenderit nemo blanditiis?
         </p>
-        <div class="services-container">
+        <div class="services-container service-01">
           <div class="services-icon">
             <i class="fa-brands fa-java"></i>
           </div>
@@ -712,7 +1146,7 @@
             </p>
           </div>
         </div>
-        <div class="services-container">
+        <div class="services-container service-02">
           <div class="services-icon">
             <i class="fa-brands fa-uikit"></i>
           </div>
@@ -726,7 +1160,7 @@
             </p>
           </div>
         </div>
-        <div class="services-container">
+        <div class="services-container service-03">
           <div class="services-icon">
             <i class="fa-solid fa-globe"></i>
           </div>
@@ -740,7 +1174,7 @@
             </p>
           </div>
         </div>
-        <div class="services-container">
+        <div class="services-container service-04">
           <div class="services-icon">
             <i class="fa-solid fa-database"></i>
           </div>
@@ -769,7 +1203,11 @@
       <h3 id="project-title">JAVA PROJECT</h3>
       <div class="java-project">
         <div class="project project-1">
-          <img src="/assest/images/JAva projects.jpg" alt="project-01" />
+          <img
+            src="/assest/images/Stock management.png"
+            alt="stock-managemnet-system"
+          />
+          <h3>Stock Managemnet System</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
             vel laudantium numquam, explicabo, quas dolores commodi odit rerum
@@ -777,19 +1215,220 @@
             doloribus voluptates?Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Exercitationem sit doloremque quos in enim quas
             accusantium corporis quisquam dicta nobis! Praesentium assumenda
-            delectus omnis esse autem odio suscipit quo reprehenderit. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi iure
-            debitis voluptatem eos assumenda laudantium dolor iste impedit
-            veritatis, quisquam aliquam quibusdam velit, blanditiis sapiente!
-            Blanditiis est suscipit veritatis?
           </p>
         </div>
-        <div class="project project-2">2</div>
-        <div class="project project-3">3</div>
-        <div class="project project-4">4</div>
+        <div class="project project-2">
+          <img src="/assest/images/Bubble game.png" alt="Bubble-game" />
+          <h3>Bubble Game</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+        <div class="project project-3">
+          <img
+            src="/assest/images/Project-marine-hub.png"
+            alt="project-marine-hub"
+          />
+          <h3>Project Marine Hub</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+        <div class="project project-4">
+          <img
+            src="/assest/images/Project-DMS-cool-tech.png"
+            alt="project-dms-cooltech"
+          />
+          <h3>Project DMS CoolTech</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+      </div>
+
+      <!-- WEB APPLICATION -->
+      <h3 id="project-title">WEB DEVELOPMENT</h3>
+      <div class="web-application">
+        <div class="application project-1">
+          <img
+            src="/assest/images/Stock management.png"
+            alt="stock-managemnet-system"
+          />
+          <h3>Stock Managemnet System</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+        <div class="application project-2">
+          <img src="/assest/images/Bubble game.png" alt="Bubble-game" />
+          <h3>Bubble Game</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+        <div class="application project-3">
+          <img
+            src="/assest/images/Project-marine-hub.png"
+            alt="project-marine-hub"
+          />
+          <h3>Project Marine Hub</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+        <div class="application project-4">
+          <img
+            src="/assest/images/Project-DMS-cool-tech.png"
+            alt="project-dms-cooltech"
+          />
+          <h3>Project DMS CoolTech</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            vel laudantium numquam, explicabo, quas dolores commodi odit rerum
+            id unde soluta ducimus ab quod temporibus atque dicta facilis,
+            doloribus voluptates?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem sit doloremque quos in enim quas
+            accusantium corporis quisquam dicta nobis! Praesentium assumenda
+          </p>
+        </div>
+      </div>
+      <br /><br />
+      <hr />
+      <!-- GALLERY -->
+      <div class="gallery-section">
+        <h2 id="gallery-title">GALLERY</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium,
+          eius voluptates veniam possimus temporibus, similique debitis in vero
+          delectus rem, natus ratione quisquam animi nostrum reiciendis!
+          Repellendus officia voluptate nemo.
+        </p>
+        <div class="gallery-container">
+          <div class="gallery">
+            <img
+              id="main-image"
+              src="/assest/images/Gallery.jpg"
+              alt="Gallery-01"
+            />
+            <div class="image-collection">
+              <img src="/assest/images/Gallery.jpg" alt="" />
+              <img src="/assest/images/Gallery.jpg" alt="" />
+              <img src="/assest/images/Gallery.jpg" alt="" />
+              <img src="/assest/images/Gallery.jpg" alt="" />
+            </div>
+            <div id="gallery-text">
+              <h3>Gallery 01</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus modi officiis a nihil quasi fuga perspiciatis nemo
+                ipsa libero ea, nam maxime deserunt quibusdam. Impedit fugiat
+                voluptates natus qui sequi. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Accusamus modi officiis a nihil
+                quasi fuga perspiciatis nemo ipsa libero ea, nam maxime deserunt
+                quibusdam. Impedit fugiat voluptates natus qui sequi. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+                modi officiis a nihil quasi fuga perspiciatis nemo ipsa libero
+                ea, nam maxime deserunt quibusdam. Impedit fugiat voluptates
+                natus qui sequi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- GET IN TOUCH -->
+      <div class="contact-section">
+        <h2>GET IN TOUCH</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero
+          nam, ratione impedit earum architecto cum minus ducimus. Perspiciatis
+          porro quibusdam corrupti unde eum qui in reiciendis, dolore aliquam
+          officiis!
+        </p>
+        <div class="contact-container">
+          <div class="contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p>shaanz11.11@gmail.com</p>
+          </div>
+          <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <p>+94 77 698 6455</p>
+          </div>
+          <div class="contact">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Bibile, Sri Lanka</p>
+          </div>
+        </div>
+        <form class="main-form">
+          <h2>Contact Us</h2>
+          <p>If you need any help, Please let us know...!!</p>
+
+          <div class="name-feild">
+            <label for="name"> Name:</label><br />
+            <input type="text" id="name" /><br /><br />
+          </div>
+
+          <div>
+            <label for="email"> Email:</label><br />
+            <input type="email" id="email" /><br /><br />
+          </div>
+
+          <label for="message"> Message:</label><br />
+          <textarea id="message" cols="30" rows="10"></textarea>
+          <br /><br />
+          <button id="submit-button" type="submit">Submit</button>
+        </form>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-nav">
+          <a href=""
+            ><i class="fa-brands fa-github" style="color: #ffffff"></i
+          ></a>
+          <a href=""
+            ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+          ></a>
+          <a href=""
+            ><i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+          </a>
+        </div>
+        <p>Copyright &copy; 2022. All Rights Reserved</p>
+      </div>
+    </footer>
     <div class="overlay"></div>
+    <script src="/JS/index.js"></script>
   </body>
 </html>
